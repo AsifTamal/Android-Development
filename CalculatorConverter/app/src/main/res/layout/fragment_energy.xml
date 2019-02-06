@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UnitConverterFragmentsTabs.EnergyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/available_conversions" />
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_joule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_joule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/joule"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_kilojoule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_kilojoule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kilojoule"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_gram_calorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_gram_calorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/gram_calorie"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_kilocalorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_kilocalorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kilocalorie"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_watt_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_watt_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/watt_hour"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_kilowatt_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_kilowatt_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kilowatt_hour"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_electronvolt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_electronvolt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/electronvolt"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_british_thermal_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_british_thermal_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/british_thermal_unit"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_therm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_therm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_therm"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_foot_pound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_foot_pound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/foot_pound"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

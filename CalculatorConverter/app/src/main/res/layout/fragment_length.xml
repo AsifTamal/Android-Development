@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UnitConverterFragmentsTabs.LengthFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length Fragment"
+
+        android:textSize="40dp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_kilometre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_kilometre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kilometre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_metre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_metre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/metre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_centimetre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_centimetre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/centimetre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_millimetre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_millimetre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/millimetre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_micrometre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_micrometre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/micrometre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_nanometre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_nanometre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nanometre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_mile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_mile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mile"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_yard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_yard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/yard"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/foot"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_inch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_inch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inch"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_nautical_mile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_nautical_mile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nautical_mile"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>

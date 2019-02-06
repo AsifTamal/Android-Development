@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".UnitConverterFragmentsTabs.PressureFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_atmosphere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_atmosphere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/atmosphere"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bar"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_pascal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_pascal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pascal"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_pound_force_per_square_inch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_pound_force_per_square_inch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pound_force_per_square_inch"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_torr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_torr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/torr"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

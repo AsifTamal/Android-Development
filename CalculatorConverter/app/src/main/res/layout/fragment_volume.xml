@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".UnitConverterFragmentsTabs.VolumeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_liquid_gallon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_liquid_gallon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_liquid_gallon"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_liquid_quart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_liquid_quart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_liquid_quart"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_liquid_pint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_liquid_pint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_liquid_pint"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_legal_cup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_legal_cup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_legal_cup"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_fluid_ounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_fluid_ounce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_fluid_ounce"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_tablespoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_tablespoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_tablespoon"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_us_teaspoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_us_teaspoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/us_teaspoon"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_litre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_litre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/litre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_millilitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_millilitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/millilitre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_imperial_gallon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_imperial_gallon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/imperial_gallon"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_imperial_quart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_imperial_quart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/imperial_quart"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_imperial_pint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_imperial_pint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/imperial_pint"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_imperial_fluid_ounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_imperial_fluid_ounce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/imperial_fluid_ounce"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_imperial_tablespoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_imperial_tablespoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/imperial_tablespoon"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_imperial_teaspoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_imperial_teaspoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/imperial_teaspoon"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
+</ScrollView>

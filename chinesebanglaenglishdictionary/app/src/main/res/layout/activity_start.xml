@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:background="#aa86d4"
+    tools:context=".StartActivity">
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/bottom_bar"
+        android:text="Admin Login"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="497dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnGuest"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_default"
+        android:text="Guest"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="577dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="20sp"
+        />
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context=".UnitConverterFragmentsTabs.AreaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Area Fragment"
+       android:layout_centerInParent="true"
+       android:textSize="30dp"
+       />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_layout_square_kilometer">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Square Kilometre"
+            android:inputType="numberSigned|numberDecimal"
+            android:id="@+id/input_square_kilometer"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_layout_square_metre">
+        <EditText
+            android:id="@+id/input_square_metre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Square Metre"
+            android:inputType="numberSigned|numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_layout_square_mile">
+        <EditText
+            android:id="@+id/input_square_mile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="square_mile"
+            android:inputType="numberSigned|numberDecimal" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_square_yard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_square_yard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="square_yard"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_square_foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_square_foot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="square_foot"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_square_inch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_square_inch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="inch"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_hectare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_hectare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hectare"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_acre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_acre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="acre"
+            android:inputType="numberSigned|numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</LinearLayout>
