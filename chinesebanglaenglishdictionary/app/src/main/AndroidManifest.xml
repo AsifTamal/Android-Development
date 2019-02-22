@@ -3,6 +3,7 @@
     package="com.example.asiftamal.chinesebanglaenglishdictionary">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,7 @@
         android:roundIcon="@mipmap/app_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivityAdmin"></activity>
         <activity android:name=".AdminPanelActivity" />
         <activity android:name=".dictionaryfiles.DictionaryMainActivity" />

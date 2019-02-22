@@ -15,6 +15,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 
 public class DictionaryDBclass extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="dictionary.db";
@@ -61,6 +62,36 @@ public class DictionaryDBclass extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
        // db.execSQL(DROP_TABLE);
        // onCreate(db);
+    }
+
+    public String[] dictionaryWords(){
+        String mypath=DB_PATH+DATABASE_NAME;
+        myDictioaryWordDB=SQLiteDatabase.openDatabase(mypath,null,SQLiteDatabase.OPEN_READWRITE);
+        Cursor cursor=myDictioaryWordDB.rawQuery("Select * from dictionary_table ",null);
+
+
+        ArrayList<String> wordTerms = new ArrayList<String>();
+
+        if(cursor.moveToFirst()){
+
+            do{
+
+                String word = cursor.getString(cursor.getColumnIndexOrThrow("word_english"));
+                String cword = cursor.getString(cursor.getColumnIndexOrThrow("word_chinese"));
+                wordTerms.add(word);
+                wordTerms.add(cword);
+            }while(cursor.moveToNext());
+
+        }
+
+        cursor.close();
+
+        String[] dictionaryWords = new String[wordTerms.size()];
+
+        dictionaryWords = wordTerms.toArray(dictionaryWords);
+
+        return dictionaryWords;
+
     }
 
     public void checkAndCopyDatabase() throws IOException {
@@ -157,6 +188,13 @@ public class DictionaryDBclass extends SQLiteOpenHelper {
         String mypath=DB_PATH+DATABASE_NAME;
         myDictioaryWordDB=SQLiteDatabase.openDatabase(mypath,null,SQLiteDatabase.OPEN_READWRITE);
         Cursor cursor=myDictioaryWordDB.rawQuery("Select * from dictionary_table where word_id="+ position,null);
+        return cursor;
+    }
+
+    public Cursor ShowEnglishChineseWordForAutocomplete() {
+        String mypath=DB_PATH+DATABASE_NAME;
+        myDictioaryWordDB=SQLiteDatabase.openDatabase(mypath,null,SQLiteDatabase.OPEN_READWRITE);
+        Cursor cursor=myDictioaryWordDB.rawQuery("Select * from dictionary_table ",null);
         return cursor;
     }
 }

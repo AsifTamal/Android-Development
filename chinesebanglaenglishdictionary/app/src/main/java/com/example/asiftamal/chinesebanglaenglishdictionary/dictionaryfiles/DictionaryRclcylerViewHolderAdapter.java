@@ -43,11 +43,11 @@ public class DictionaryRclcylerViewHolderAdapter extends RecyclerView.Adapter<Di
     @Override
     public void onBindViewHolder(@NonNull DictionaryRecycleViewHolder dictionaryRecycleViewHolder, int i) {
         dictionaryRecycleViewHolder.txtWordId.setText(Integer.toString(item_DicWordDetail.get(i).getWordID()));
-        dictionaryRecycleViewHolder.txt_EnglishWord.setText(item_DicWordDetail.get(i).getEnglishword());
-        dictionaryRecycleViewHolder.txt_Banglaword.setText(item_DicWordDetail.get(i).getBanglaword()+"  (Pronunciation: "+item_DicWordDetail.get(i).getPronctnbangla()+")");
-        dictionaryRecycleViewHolder.txt_ChineseWord.setText(item_DicWordDetail.get(i).getChineseword()+"  (Pronunciation: "+item_DicWordDetail.get(i).getPronctnchinese()+")");
-       // dictionaryRecycleViewHolder.txt_BanglaWordPron.setText(item_DicWordDetail.get(i).getPronctnbangla());
-       // dictionaryRecycleViewHolder.txt_ChineseWordPron.setText(item_DicWordDetail.get(i).getPronctnchinese());
+        dictionaryRecycleViewHolder.txt_EnglishWord.setText("English-> "+item_DicWordDetail.get(i).getEnglishword());
+        dictionaryRecycleViewHolder.txt_Banglaword.setText("Bangla-> "+item_DicWordDetail.get(i).getBanglaword());
+        dictionaryRecycleViewHolder.txt_ChineseWord.setText("Chinese-> "+item_DicWordDetail.get(i).getChineseword());
+        dictionaryRecycleViewHolder.txt_BanglaWordPron.setText("উচ্চারণ: "+item_DicWordDetail.get(i).getPronctnbangla());
+        dictionaryRecycleViewHolder.txt_ChineseWordPron.setText("发音/Pinyin: "+item_DicWordDetail.get(i).getPronctnchinese());
      //   dictionaryRecycleViewHolder.txt_EnglishWord.setText(Integer.toString(item_adminDetail.get(i).getId()));
     }
 
@@ -115,8 +115,8 @@ class DictionaryRecycleViewHolder extends RecyclerView.ViewHolder implements Vie
         txt_EnglishWord=(TextView)itemView.findViewById(R.id.txtEnglishWordid);
         txt_ChineseWord=(TextView) itemView.findViewById(R.id.txtChineseWordid);
         txt_Banglaword=(TextView)itemView.findViewById(R.id.txtBanglaWordid);
-        //txt_BanglaWordPron=(TextView)itemView.findViewById(R.id.txtBanglaWordPronid);
-       // txt_ChineseWordPron=(TextView)itemView.findViewById(R.id.txtChineseWordPronid);
+        txt_BanglaWordPron=(TextView)itemView.findViewById(R.id.txtBanglaWordPronid);
+        txt_ChineseWordPron=(TextView)itemView.findViewById(R.id.txtChineseWordPronid);
 
         itemView.setOnClickListener(this);
     }

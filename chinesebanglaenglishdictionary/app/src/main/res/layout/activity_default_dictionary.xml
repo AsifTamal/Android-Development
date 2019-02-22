@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
+
     tools:context=".dictionaryfiles.DefaultDictionaryActivity">
 
 
@@ -30,7 +31,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
+        android:padding="8dp"
 
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
@@ -38,7 +39,7 @@
             android:id="@+id/DefaultRcVwId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#c7d8e6"
+            android:background="#c3d2df"
             >
 
         </android.support.v7.widget.RecyclerView>
