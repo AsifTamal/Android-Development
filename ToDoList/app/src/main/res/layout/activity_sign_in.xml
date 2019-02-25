@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#eaf4f3"
+    tools:context=".SignInActivity">
+
+    <EditText
+        android:id="@+id/edttxtSignInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        />
+    <EditText
+        android:id="@+id/edttxtSignInPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+
+        />
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sign In"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        />
+    <ProgressBar
+        android:id="@+id/ProgressbarSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Signed Up yet? "
+            />
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="#7072e1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

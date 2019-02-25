@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+android:orientation="vertical"
+android:gravity="center"
+android:background="#eaf4f3"
+tools:context=".SignUpActivity">
+
+<EditText
+    android:id="@+id/edttxtSignUpEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Email"
+    />
+<EditText
+    android:id="@+id/edttxtSignUpPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Password"
+    android:inputType="textPassword"
+    />
+<Button
+    android:id="@+id/btnSignUp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Sign Up"
+    style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+    />
+    <ProgressBar
+        android:id="@+id/ProgressbarSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to  "
+        />
+    <TextView
+        android:id="@+id/txtSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#7072e1"
+        />
+
+</LinearLayout>
+
+</LinearLayout>
