@@ -61,59 +61,58 @@ public class SignUpActivity extends AppCompatActivity {
         String Email=edttxtsignupemail.getText().toString().trim();
         String Password=edttxtsignupPassword.getText().toString().trim();
 
-        validation(Email,Password);
-            signUpprogrssbar.setVisibility(View.VISIBLE);
-        mAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
+            if(!validation(Email,Password)) {
+                signUpprogrssbar.setVisibility(View.VISIBLE);
+                mAuth.createUserWithEmailAndPassword(Email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
 
-                    Toast.makeText(getApplicationContext(),"Sign Up Successful",Toast.LENGTH_SHORT).show();
-                    edttxtsignupemail.setText("");
-                    edttxtsignupPassword.setText("");
-                    Intent intent= new Intent(getApplicationContext(),SignInActivity.class);
-                    startActivity(intent);
+                            Toast.makeText(getApplicationContext(), "Sign Up Successful", Toast.LENGTH_SHORT).show();
+                            edttxtsignupemail.setText("");
+                            edttxtsignupPassword.setText("");
+                            Intent intent = new Intent(getApplicationContext(), SignInActivity.class);
+                            startActivity(intent);
 
-                } else {
-                    if(task.getException() instanceof FirebaseAuthUserCollisionException){
-                        Toast.makeText(getApplicationContext(),"User Already Registered",Toast.LENGTH_SHORT).show();
+                        } else {
+                            if (task.getException() instanceof FirebaseAuthUserCollisionException) {
+                                Toast.makeText(getApplicationContext(), "User Already Registered", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Error : " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        signUpprogrssbar.setVisibility(View.GONE);
                     }
-                   else {
-                        Toast.makeText(getApplicationContext(),"Error : " +task.getException().getMessage(),Toast.LENGTH_SHORT).show();
-                    }
-                }
-                signUpprogrssbar.setVisibility(View.GONE);
+                });
             }
-        });
-
 
         }
 
-        private void validation(String email, String password) {
+        private boolean validation(String email, String password) {
 
 
             if(email.isEmpty()){
                 edttxtsignupemail.setError("Please Enter Email");
                 edttxtsignupemail.requestFocus();
-
+                return true;
             }
             if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 edttxtsignupemail.setError("Please Enter a valid Email");
                 edttxtsignupemail.requestFocus();
-
+                return true;
             }
             if(password.isEmpty()){
                 edttxtsignupPassword.setError("Please Enter Paswword");
                 edttxtsignupPassword.requestFocus();
-
+                return true;
             }
             if(password.length()<6){
                 edttxtsignupPassword.setError("Paswword should be more than 6 characters");
                 edttxtsignupPassword.requestFocus();
-
+                return true;
             }
 
-
+            return false;
 
         }
     }
