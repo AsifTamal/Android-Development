@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather Forcast with widget</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="WeatherNow">Today"\'"s weather</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
