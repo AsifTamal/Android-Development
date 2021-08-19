@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+        <!--veriable name must start with lowercase-->
+        <variable
+            name="homeviewmodel"
+            type="com.brighteststar.mvvmretrofitsigninup.viewModels.fragmentViewModels.HomeFragmentViewModel"/>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+
+            <TableRow android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email"
+
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={homeviewmodel.email}"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Name"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={homeviewmodel.name}"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="School"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textViewSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={homeviewmodel.school}"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+<!--veriable name must start with lowercase-->
+        <variable
+            name="ccretd"
+            type="com.brighteststar.mvvmretrofitsigninup.viewModels.CreateUserViewModel"/>
+        <variable
+            name="clickfunction"
+            type="com.brighteststar.mvvmretrofitsigninup.click.ButtonClick"/>
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Sign Up"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#F6F3F3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:text="@={ccretd.email}"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="5dp"
+            android:text="@={ccretd.password}"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="5dp"
+            android:hint="name"
+            android:text="@={ccretd.name}"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextSchool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_school"
+            android:drawablePadding="5dp"
+            android:hint="school"
+            android:text="@={ccretd.school}"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:lineSpacingExtra="7dp"
+        android:text="Already have an Account?\nClick to Login"
+        android:textAlignment="center"
+        android:onClick="@{(v)->clickfunction.goLogin()}"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#FDFDFD" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sign Up"
+        android:onClick="@{(v)->clickfunction.getData()}"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+</layout>
